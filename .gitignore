@@ -1,0 +1,84 @@
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+myvenv/
+models/
+# Django specific
+*.sqlite3
+db.sqlite3
+/media/
+staticfiles/
+static/
+!static/admin/
+
+# Logs and Debug files
+*.log
+*.pot
+*.pyc
+*.pyo
+*.coverage
+*.cover
+*.prof
+*.dat
+*.pid
+
+# Secrets and settings
+.env
+*.pem
+*.key
+*.crt
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.swa
+*.swn
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Node modules (if using Node.js for frontend)
+node_modules/
+
+# Cache files
+*.cache
+*.bak
+*.tmp
+*.old
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# Pip file lock
+Pipfile.lock
+
+# pytest cache
+.pytest_cache/
+
+# Migrations (optional, if you don't want to track)
+**/migrations/*.py
+!**/migrations/__init__.py
+migrations/
+# Celery worker directories (if using Celery)
+celerybeat-schedule
+celerybeat.pid
+
+# Coverage reports
+htmlcov/
+
+# Local settings (customize as needed)
+settings_local.py
