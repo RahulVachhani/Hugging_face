@@ -24,3 +24,12 @@ class GeneretedText(models.Model):
 
     def __str__(self):
         return self.text[:20]
+    
+
+class GeneratedImage(models.Model):
+    img = models.ImageField(upload_to='image/')
+
+
+class GeneratedVideo(models.Model):
+    video = models.FileField(upload_to="annotated_videos/")
+    created_at = models.DateTimeField(auto_now_add=True)

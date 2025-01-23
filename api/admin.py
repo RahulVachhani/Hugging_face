@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils.html import format_html
-from .models import GeneratedAudio, SpeechRecognitionResult, GeneretedText
+from .models import GeneratedAudio, SpeechRecognitionResult, GeneretedText, GeneratedImage, GeneratedVideo
 
 class GeneratedAudioAdmin(admin.ModelAdmin):
     list_display = ['text', 'phonemes', 'audio_player']
@@ -43,3 +43,5 @@ class GeneretedTextAdmin(admin.ModelAdmin):
 
 # Register the model with the custom admin class
 admin.site.register(GeneretedText, GeneretedTextAdmin)
+admin.site.register(GeneratedImage)
+admin.site.register(GeneratedVideo)

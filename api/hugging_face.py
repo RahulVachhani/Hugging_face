@@ -38,3 +38,9 @@ def model1():
     return model,processor
 
 
+
+def model2():
+    with open('models/faceDetection.pkl', 'rb') as f:
+        model_data = pickle.load(f)
+
+    return model_data
